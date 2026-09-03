@@ -1,0 +1,20 @@
+# Nixpacks configuration for Railway.app deployment
+[providers]
+providers = ["python", "node"]
+
+[phases.setup]
+nixPkgs = ["python311", "nodejs_18"]
+
+[phases.install]
+cmds = [
+  "cd backend && pip install -r requirements.txt",
+  "cd frontend && npm install"
+]
+
+[phases.build]
+cmds = [
+  "cd frontend && npm run build"
+]
+
+[start]
+cmd = "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
