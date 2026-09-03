@@ -8,18 +8,17 @@ export default function Doctors({ doctors, onSelectDoctor }) {
         
         <div className="section-header">
           <div className="badge badge-royal" style={{ marginBottom: '0.5rem' }}>
-            Kalam Dental Specialist Roster
+            Kalam Lead Dental Specialist
           </div>
-          <h2>Senior Dental Surgeons & Implantologists</h2>
+          <h2>Meet Our Chief Dental Surgeon</h2>
           <p>
-            Our clinic is led by MDS specialist surgeons and implantologists with international fellowship training.
+            Our clinic is personally led by Dr. Kalam Kishore MDS, offering 18+ years of clinical excellence in laser dental implants and tooth preservation.
           </p>
         </div>
 
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
-          gap: '1.25rem'
+          maxWidth: '560px',
+          margin: '0 auto'
         }}>
           {doctors.map((doc) => (
             <div key={doc.id} className="glass-card" style={{
@@ -29,7 +28,7 @@ export default function Doctors({ doctors, onSelectDoctor }) {
               justifyContent: 'space-between'
             }}>
               <div>
-                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <div style={{ position: 'relative', height: '260px', overflow: 'hidden' }}>
                   <img
                     src={doc.photo_url}
                     alt={doc.name}
@@ -42,70 +41,70 @@ export default function Doctors({ doctors, onSelectDoctor }) {
 
                   <div style={{
                     position: 'absolute',
-                    bottom: '8px',
-                    right: '8px',
+                    bottom: '10px',
+                    right: '10px',
                     background: 'rgba(7, 25, 47, 0.88)',
                     color: '#FFFFFF',
-                    padding: '0.2rem 0.55rem',
+                    padding: '0.25rem 0.65rem',
                     borderRadius: 'var(--radius-full)',
-                    fontSize: '0.75rem',
+                    fontSize: '0.785rem',
                     fontWeight: 700,
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.2rem'
+                    gap: '0.25rem'
                   }}>
-                    <Star size={12} fill="#C5A059" color="#C5A059" /> {doc.rating}
+                    <Star size={13} fill="#C5A059" color="#C5A059" /> {doc.rating} / 5.0 Rating
                   </div>
                 </div>
 
-                <div style={{ padding: '1rem' }}>
-                  <div style={{ fontSize: '0.725rem', color: 'var(--primary-royal)', fontWeight: 700, textTransform: 'uppercase' }}>
+                <div style={{ padding: '1.25rem' }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--primary-royal)', fontWeight: 700, textTransform: 'uppercase' }}>
                     {doc.specialization}
                   </div>
 
-                  <h3 style={{ fontSize: '1.1rem', margin: '0.25rem 0' }}>
+                  <h3 style={{ fontSize: '1.25rem', margin: '0.25rem 0' }}>
                     {doc.name}
                   </h3>
 
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600, marginBottom: '0.6rem' }}>
-                    {doc.title}
+                  <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600, marginBottom: '0.75rem' }}>
+                    {doc.title} — {doc.qualification}
                   </div>
 
-                  <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)', lineHeight: 1.4, marginBottom: '0.85rem' }}>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1rem' }}>
                     {doc.bio}
                   </p>
 
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.3rem',
-                    fontSize: '0.785rem',
+                    gap: '0.35rem',
+                    fontSize: '0.825rem',
                     color: 'var(--accent-gold-dark)',
                     fontWeight: 700,
-                    marginBottom: '0.35rem'
+                    marginBottom: '0.4rem'
                   }}>
-                    <Award size={13} /> {doc.experience_years}+ Years Experience
+                    <Award size={15} /> {doc.experience_years}+ Years Clinical Leadership
                   </div>
 
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.3rem',
-                    fontSize: '0.75rem',
+                    gap: '0.35rem',
+                    fontSize: '0.8rem',
                     color: 'var(--text-muted)'
                   }}>
-                    <Clock size={13} color="#0052CC" /> {doc.available_days}
+                    <Clock size={14} color="#0052CC" /> Consultation Timings: {doc.available_days}
                   </div>
                 </div>
               </div>
 
-              <div style={{ padding: '0 1rem 1rem 1rem' }}>
+              <div style={{ padding: '0 1.25rem 1.25rem 1.25rem' }}>
                 <button
                   onClick={() => onSelectDoctor(doc.name)}
                   className="btn btn-primary"
-                  style={{ width: '100%', padding: '0.5rem', fontSize: '0.825rem' }}
+                  style={{ width: '100%', padding: '0.6rem', fontSize: '0.875rem' }}
                 >
-                  <Calendar size={14} /> Book Consult
+                  <Calendar size={15} /> Book Consultation with Dr. Kalam
                 </button>
               </div>
 

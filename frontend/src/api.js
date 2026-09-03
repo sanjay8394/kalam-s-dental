@@ -67,31 +67,19 @@ export async function fetchDoctors() {
     if (!res.ok) throw new Error("Failed to fetch doctors");
     return await res.json();
   } catch (err) {
-    console.error("API error, falling back to static doctors", err);
+    console.error("API error, falling back to single lead doctor", err);
     return [
       {
         id: 1,
         name: "Dr. Kalam Kishore MDS",
-        title: "Founder & Senior Implantologist",
-        specialization: "Laser Implant Surgery & Full Mouth Rehab",
-        qualification: "MDS, FICOI (USA)",
+        title: "Founder, Chief Dental Surgeon & Specialist",
+        specialization: "Laser Dental Implants, Painless RCT & Complete Care",
+        qualification: "MDS (Prosthodontics & Implantology), FICOI (USA)",
         experience_years: 18,
         rating: 4.98,
         photo_url: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80",
         available_days: "Mon - Sat (10:00 AM - 8:00 PM)",
-        bio: "Pioneer in painless computer-guided laser dental implants and full mouth smile reconstruction."
-      },
-      {
-        id: 2,
-        name: "Dr. Meera Nambiar MDS",
-        title: "Chief Endodontist & Laser Specialist",
-        specialization: "Microscopic Root Canal & Tooth Preservation",
-        qualification: "MDS (Endodontics)",
-        experience_years: 13,
-        rating: 4.95,
-        photo_url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80",
-        available_days: "Daily (11:00 AM - 7:00 PM)",
-        bio: "Specialist in 100% painless single-visit rotary root canal procedures."
+        bio: "Senior Chief Dental Surgeon specializing in painless computer-guided laser dental implants, microscopic single-visit root canals, clear aligners, and comprehensive aesthetic smile design."
       }
     ];
   }
