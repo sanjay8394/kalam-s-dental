@@ -44,7 +44,7 @@ class AppointmentORM(Base):
     email = Column(String(100), nullable=False)
     date = Column(String(20), nullable=False)
     time_slot = Column(String(50), nullable=False)
-    branch = Column(String(100), default="Kamal Dental Main Clinic")
+    branch = Column(String(100), default="Kalam Dental Main Clinic")
     doctor_name = Column(String(100), nullable=False)
     service_name = Column(String(150), nullable=False)
     status = Column(String(20), default="Confirmed")
@@ -53,7 +53,7 @@ class AppointmentORM(Base):
 
 def generate_booking_ref() -> str:
     digits = ''.join(random.choices(string.digits, k=5))
-    return f"KAMAL-{digits}"
+    return f"KALAM-{digits}"
 
 
 # ================= PYDANTIC SCHEMAS =================
@@ -96,7 +96,7 @@ class AppointmentCreate(BaseModel):
     email: str
     date: str
     time_slot: str
-    branch: str = "Kamal Dental Main Clinic"
+    branch: str = "Kalam Dental Main Clinic"
     doctor_name: str
     service_name: str
     notes: Optional[str] = ""

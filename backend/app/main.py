@@ -17,8 +17,8 @@ Base.metadata.create_all(bind=engine)
 seed_database()
 
 app = FastAPI(
-    title="Kamal Dental Clinic & Advanced Implant Center API",
-    description="Backend service for Kamal Dental appointment booking, doctor management, patient tracking, and 360° smile assessment.",
+    title="Kalam Dental Clinic & Advanced Implant Center API",
+    description="Backend service for Kalam Dental appointment booking, doctor management, patient tracking, and 360° smile assessment.",
     version="2.0.0"
 )
 
@@ -34,7 +34,7 @@ app.add_middleware(
 def root():
     return {
         "status": "online",
-        "clinic": "Kamal Dental Clinic & Advanced Implant Center API",
+        "clinic": "Kalam Dental Clinic & Advanced Implant Center API",
         "documentation_swagger": "/docs",
         "documentation_redoc": "/redoc",
         "endpoints": {
@@ -53,7 +53,7 @@ def root():
 def health_check():
     return {
         "status": "online",
-        "clinic": "Kamal Dental Clinic & Advanced Implant Center",
+        "clinic": "Kalam Dental Clinic & Advanced Implant Center",
         "timestamp": datetime.utcnow().isoformat()
     }
 
@@ -108,7 +108,7 @@ def track_appointments(identifier: str, db: Session = Depends(get_db)):
     if not results:
         raise HTTPException(
             status_code=404, 
-            detail=f"No appointment record found for '{identifier}' at Kamal Dental."
+            detail=f"No appointment record found for '{identifier}' at Kalam Dental."
         )
     return results
 
@@ -177,29 +177,29 @@ def assess_smile(request: SmileAssessmentRequest):
         )
     elif "missing" in concern or "implant" in concern:
         return SmileAssessmentResponse(
-            recommended_services=["Kamal Signature Laser Implant & Zirconia Crown"],
+            recommended_services=["Kalam Signature Laser Implant & Zirconia Crown"],
             estimated_duration="Single sitting laser placement",
             price_estimate="Starting from ₹18,999",
-            expert_tip="Computer-guided laser implants at Kamal Dental achieve a 99.4% stability rate with zero bleeding or surgical sutures."
+            expert_tip="Computer-guided laser implants at Kalam Dental achieve a 99.4% stability rate with zero bleeding or surgical sutures."
         )
     elif "yellow" in concern or "whitening" in concern:
         return SmileAssessmentResponse(
-            recommended_services=["Kamal Power Laser Teeth Whitening", "Ultrasonic Spa Cleaning"],
+            recommended_services=["Kalam Power Laser Teeth Whitening", "Ultrasonic Spa Cleaning"],
             estimated_duration="40 minutes",
             price_estimate="Starting from ₹899 to ₹4,499",
             expert_tip="Laser whitening safely breaks down deep enamel discoloration up to 10 shades brighter without sensitivity."
         )
     elif "crooked" in concern or "aligner" in concern:
         return SmileAssessmentResponse(
-            recommended_services=["Kamal Clear 3D Aligners"],
+            recommended_services=["Kalam Clear 3D Aligners"],
             estimated_duration="4 to 8 months",
             price_estimate="Starting from ₹27,999",
-            expert_tip="Kamal Clear 3D Aligners include full 3D video simulation showing your predicted final smile before starting."
+            expert_tip="Kalam Clear 3D Aligners include full 3D video simulation showing your predicted final smile before starting."
         )
     else:
         return SmileAssessmentResponse(
             recommended_services=["3D Digital Hollywood Smile Makeover"],
             estimated_duration="45 minutes",
             price_estimate="Starting from ₹5,499",
-            expert_tip="Book a comprehensive 3D Intraoral Digital Consultation at Kamal Dental to review customized porcelain veneer options."
+            expert_tip="Book a comprehensive 3D Intraoral Digital Consultation at Kalam Dental to review customized porcelain veneer options."
         )

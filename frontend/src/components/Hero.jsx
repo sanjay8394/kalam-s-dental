@@ -15,24 +15,24 @@ export default function Hero({ onOpenBooking, onOpenQuiz }) {
           {/* Content */}
           <div>
             <div className="badge badge-royal" style={{ marginBottom: '0.85rem' }}>
-              🪷 Kamal Dental & Advanced Implant Center
+              🪷 Kalam Dental & Advanced Implant Center
             </div>
 
             <h1 style={{ fontSize: '2.6rem', fontWeight: 800, letterSpacing: '-0.5px', marginBottom: '0.85rem', lineHeight: 1.15 }}>
               World-Class Dentistry <br />
-              <span className="gradient-text-kamal">Built For Perfect Smiles</span>
+              <span className="gradient-text-kalam">Built For Perfect Smiles</span>
             </h1>
 
             <p style={{ fontSize: '0.975rem', color: 'var(--text-muted)', marginBottom: '1.35rem', maxWidth: '520px', lineHeight: 1.5 }}>
-              Welcome to <strong>Kamal Dental</strong>. We specialize in computer-guided painless laser implants, 30-minute micro-endodontic root canals, and custom 3D clear aligners with compassionate personal care.
+              Welcome to <strong>Kalam Dental</strong>. We specialize in computer-guided painless laser implants, 30-minute micro-endodontic root canals, and custom 3D clear aligners with compassionate personal care.
             </p>
 
             {/* Highlights Grid */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.6rem', marginBottom: '1.5rem' }}>
               {[
-                'Kamal Laser Titanium Implants',
+                'Kalam Laser Titanium Implants',
                 '30-Min Painless Micro RCT',
-                'Kamal Clear 3D Aligners',
+                'Kalam Clear 3D Aligners',
                 'Digital Hollywood Smile Design'
               ].map((item, idx) => (
                 <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.85rem', fontWeight: 600 }}>
@@ -85,7 +85,7 @@ export default function Hero({ onOpenBooking, onOpenQuiz }) {
 
           </div>
 
-          {/* Right Column Visual Card (Compact) */}
+          {/* Right Column Visual Card */}
           <div style={{ position: 'relative' }}>
             <div className="glass-card" style={{
               padding: '0.85rem',
@@ -95,7 +95,7 @@ export default function Hero({ onOpenBooking, onOpenQuiz }) {
             }}>
               <img
                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
-                alt="Kamal Dental Clinic"
+                alt="Kalam Dental Clinic"
                 style={{
                   width: '100%',
                   height: '280px',
@@ -104,7 +104,6 @@ export default function Hero({ onOpenBooking, onOpenQuiz }) {
                 }}
               />
 
-              {/* Floating Badge 1 */}
               <div style={{
                 position: 'absolute',
                 top: '18px',
@@ -125,7 +124,6 @@ export default function Hero({ onOpenBooking, onOpenQuiz }) {
                 </div>
               </div>
 
-              {/* Floating Badge 2 */}
               <div style={{
                 position: 'absolute',
                 bottom: '-10px',

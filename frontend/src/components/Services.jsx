@@ -33,7 +33,6 @@ export default function Services({ services, onSelectService }) {
             Explore our state-of-the-art laser procedures, 3D clear aligners, titanium implants, and microscopic endodontics.
           </p>
 
-          {/* Compact Category Tabs */}
           <div style={{
             display: 'flex',
             justifyContent: 'center',
@@ -64,7 +63,6 @@ export default function Services({ services, onSelectService }) {
           </div>
         </div>
 
-        {/* Compact Services Grid */}
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(270px, 1fr))',
@@ -89,7 +87,7 @@ export default function Services({ services, onSelectService }) {
                     fontSize: '0.675rem',
                     padding: '0.15rem 0.5rem'
                   }} className="badge badge-gold">
-                    ★ Featured
+                    ★ Kalam Featured
                   </div>
                 )}
 

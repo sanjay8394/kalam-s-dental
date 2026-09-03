@@ -6,12 +6,12 @@ export default function Gallery() {
 
   const cases = [
     {
-      title: "Kamal Laser Implant Restoration",
+      title: "Kalam Laser Implant Restoration",
       treatment: "Full Arch Titanium Implants",
       beforeImg: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80",
       afterImg: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80",
       patient: "Rajeshwar Rao",
-      comment: "I had multiple missing teeth. Dr. Kamal Kishore placed laser implants in a single sitting with zero pain. The zirconium teeth feel like my natural ones!"
+      comment: "I had multiple missing teeth. Dr. Kalam Kishore placed laser implants in a single sitting with zero pain. The zirconium teeth feel like my natural ones!"
     },
     {
       title: "3D Hollywood Smile Makeover",
@@ -22,7 +22,7 @@ export default function Gallery() {
       comment: "My discolored front teeth made me feel hesitant during business presentations. The digital veneer makeover completely restored my confidence!"
     },
     {
-      title: "Kamal Clear Aligners Straightening",
+      title: "Kalam Clear Aligners Straightening",
       treatment: "3D Custom Aligners (6 Months)",
       beforeImg: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80",
       afterImg: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",

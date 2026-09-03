@@ -8,7 +8,7 @@ export default function Doctors({ doctors, onSelectDoctor }) {
         
         <div className="section-header">
           <div className="badge badge-royal" style={{ marginBottom: '0.5rem' }}>
-            Specialist Surgeons
+            Kalam Dental Specialist Roster
           </div>
           <h2>Senior Dental Surgeons & Implantologists</h2>
           <p>

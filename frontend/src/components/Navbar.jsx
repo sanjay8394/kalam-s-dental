@@ -20,7 +20,7 @@ export default function Navbar({ onOpenBooking, onOpenPortal, onOpenAdmin, theme
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: '#E2E8F0' }}>
-              <MapPin size={12} color="#00B4D8" /> Kamal Dental & Advanced Implant Center
+              <MapPin size={12} color="#00B4D8" /> Kalam Dental & Advanced Implant Center
             </span>
             <span style={{ opacity: 0.4 }}>|</span>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', color: '#94A3B8' }}>
@@ -45,7 +45,7 @@ export default function Navbar({ onOpenBooking, onOpenPortal, onOpenAdmin, theme
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '48px' }}>
           
-          {/* Brand Logo - Compact */}
+          {/* Brand Logo - Compact Kalam Dental */}
           <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.6rem', flexShrink: 0 }}>
             <div style={{
               width: '34px',
@@ -62,7 +62,7 @@ export default function Navbar({ onOpenBooking, onOpenPortal, onOpenAdmin, theme
             </div>
             <div>
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.15rem', fontWeight: 800, letterSpacing: '-0.3px', lineHeight: 1, whiteSpace: 'nowrap' }}>
-                KAMAL <span style={{ color: 'var(--primary-royal)' }}>DENTAL</span>
+                KALAM <span style={{ color: 'var(--primary-royal)' }}>DENTAL</span>
               </div>
               <div style={{ fontSize: '0.6rem', color: 'var(--text-muted)', fontWeight: 700, letterSpacing: '0.6px', marginTop: '1px', whiteSpace: 'nowrap' }}>
                 ADVANCED IMPLANT CENTER
@@ -70,7 +70,7 @@ export default function Navbar({ onOpenBooking, onOpenPortal, onOpenAdmin, theme
             </div>
           </a>
 
-          {/* Inline Navigation Links (No wrapping) */}
+          {/* Inline Navigation Links */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }} className="nav-links">
             <a href="#services" style={{ textDecoration: 'none', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.85rem', whiteSpace: 'nowrap' }}>Treatments</a>
             <a href="#quiz" style={{ textDecoration: 'none', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.85rem', whiteSpace: 'nowrap' }}>Smile 360° AI</a>
@@ -79,7 +79,7 @@ export default function Navbar({ onOpenBooking, onOpenPortal, onOpenAdmin, theme
             <a href="#contact" style={{ textDecoration: 'none', color: 'var(--text-main)', fontWeight: 600, fontSize: '0.85rem', whiteSpace: 'nowrap' }}>Location & Hours</a>
           </div>
 
-          {/* Compact Actions & CTAs */}
+          {/* Actions & CTAs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexShrink: 0 }}>
             
             <button

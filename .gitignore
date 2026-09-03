@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production builds
+dist/
+frontend/dist/
+
+# Python / Backend
+__pycache__/
+backend/__pycache__/
+backend/app/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+
+# SQLite databases
+*.db
+backend/*.db
+kalam_dental.db
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db

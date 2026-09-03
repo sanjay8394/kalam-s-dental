@@ -8,15 +8,15 @@ def seed_database():
 
     try:
         if db.query(DoctorORM).count() > 0:
-            print("Kamal Dental DB already seeded.")
+            print("Kalam Dental DB already seeded.")
             return
 
-        print("Seeding Kamal Dental Clinic database...")
+        print("Seeding Kalam Dental Clinic database...")
 
         # 1. Doctors
         doctors = [
             DoctorORM(
-                name="Dr. Kamal Kishore MDS",
+                name="Dr. Kalam Kishore MDS",
                 title="Founder & Senior Implantologist",
                 specialization="Laser Implant Surgery & Full Mouth Rehabilitation",
                 qualification="MDS (Prosthodontics & Implantology), FICOI (USA)",
@@ -66,7 +66,7 @@ def seed_database():
         services = [
             ServiceORM(
                 category="Laser Dental Implants",
-                title="Kamal Signature Laser Implant & Zirconia Crown",
+                title="Kalam Signature Laser Implant & Zirconia Crown",
                 description="Pain-free, computer-guided titanium dental implant placement with zero-suture laser recovery and natural ceramic tooth crown.",
                 duration_mins=45,
                 price_starting=18999,
@@ -84,7 +84,7 @@ def seed_database():
             ),
             ServiceORM(
                 category="Invisible Aligners",
-                title="Kamal Clear 3D Aligners",
+                title="Kalam Clear 3D Aligners",
                 description="Custom 3D scanned clear aligner trays for comfortable, 100% invisible tooth straightening without metal brackets.",
                 duration_mins=40,
                 price_starting=27999,
@@ -102,7 +102,7 @@ def seed_database():
             ),
             ServiceORM(
                 category="Laser Whitening",
-                title="Kamal Power Laser Teeth Whitening",
+                title="Kalam Power Laser Teeth Whitening",
                 description="Advanced dual-wavelength laser whitening that brightens enamel by up to 10 shades in 40 minutes.",
                 duration_mins=40,
                 price_starting=4499,
@@ -133,41 +133,41 @@ def seed_database():
         # 3. Sample Appointments
         sample_appointments = [
             AppointmentORM(
-                booking_ref="KAMAL-78192",
+                booking_ref="KALAM-78192",
                 patient_name="Vikramaditya Roy",
                 phone="+91 98450 12345",
                 email="vikram.roy@gmail.com",
                 date=(datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d"),
                 time_slot="11:30 AM",
-                branch="Kamal Dental Main Clinic",
-                doctor_name="Dr. Kamal Kishore MDS",
-                service_name="Kamal Signature Laser Implant & Zirconia Crown",
+                branch="Kalam Dental Main Clinic",
+                doctor_name="Dr. Kalam Kishore MDS",
+                service_name="Kalam Signature Laser Implant & Zirconia Crown",
                 status="Confirmed",
                 notes="Patient consultation for single upper tooth replacement.",
                 created_at=datetime.utcnow() - timedelta(hours=2)
             ),
             AppointmentORM(
-                booking_ref="KAMAL-45109",
+                booking_ref="KALAM-45109",
                 patient_name="Sneha Kapoor",
                 phone="+91 97110 88990",
                 email="sneha.kapoor@yahoo.com",
                 date=(datetime.now() + timedelta(days=2)).strftime("%Y-%m-%d"),
                 time_slot="04:00 PM",
-                branch="Kamal Dental Main Clinic",
+                branch="Kalam Dental Main Clinic",
                 doctor_name="Dr. Siddharth Verma MDS",
-                service_name="Kamal Clear 3D Aligners",
+                service_name="Kalam Clear 3D Aligners",
                 status="Pending",
                 notes="3D Intraoral digital smile scan preview session.",
                 created_at=datetime.utcnow() - timedelta(hours=1)
             ),
             AppointmentORM(
-                booking_ref="KAMAL-12890",
+                booking_ref="KALAM-12890",
                 patient_name="Aarav Malhotra",
                 phone="+91 99001 22334",
                 email="aarav.m@outlook.com",
                 date=(datetime.now()).strftime("%Y-%m-%d"),
                 time_slot="02:30 PM",
-                branch="Kamal Dental Main Clinic",
+                branch="Kalam Dental Main Clinic",
                 doctor_name="Dr. Meera Nambiar MDS",
                 service_name="30-Min Microscopic Painless RCT",
                 status="Completed",
@@ -178,10 +178,10 @@ def seed_database():
         db.add_all(sample_appointments)
 
         db.commit()
-        print("Kamal Dental DB seeded successfully!")
+        print("Kalam Dental DB seeded successfully!")
     except Exception as e:
         db.rollback()
-        print(f"Error seeding Kamal Dental DB: {e}")
+        print(f"Error seeding Kalam Dental DB: {e}")
     finally:
         db.close()
 

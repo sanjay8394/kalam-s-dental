@@ -8,11 +8,11 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
   const [loading, setLoading] = useState(false);
   const [successData, setSuccessData] = useState(null);
 
-  const [serviceName, setServiceName] = useState(initialService || (services[0]?.title || 'Kamal Signature Laser Implant & Zirconia Crown'));
-  const [doctorName, setDoctorName] = useState(initialDoctor || (doctors[0]?.name || 'Dr. Kamal Kishore MDS'));
+  const [serviceName, setServiceName] = useState(initialService || (services[0]?.title || 'Kalam Signature Laser Implant & Zirconia Crown'));
+  const [doctorName, setDoctorName] = useState(initialDoctor || (doctors[0]?.name || 'Dr. Kalam Kishore MDS'));
   const [date, setDate] = useState(new Date(Date.now() + 86400000).toISOString().split('T')[0]);
   const [timeSlot, setTimeSlot] = useState('11:30 AM');
-  const [branch, setBranch] = useState('Kamal Dental Main Clinic');
+  const [branch, setBranch] = useState('Kalam Dental Main Clinic');
   const [patientName, setPatientName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -66,7 +66,7 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
       position: 'fixed',
       inset: 0,
       zIndex: 200,
-      background: 'rgba(10, 37, 64, 0.8)',
+      background: 'rgba(7, 25, 47, 0.8)',
       backdropFilter: 'blur(8px)',
       display: 'flex',
       alignItems: 'center',
@@ -81,20 +81,20 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
         background: 'var(--bg-card)',
         borderRadius: 'var(--radius-lg)',
         boxShadow: 'var(--shadow-lg)',
-        padding: '2rem',
+        padding: '1.75rem',
         position: 'relative'
       }}>
         <button
           onClick={onClose}
           style={{
             position: 'absolute',
-            top: '1.25rem',
-            right: '1.25rem',
+            top: '1rem',
+            right: '1rem',
             background: 'var(--bg-card-hover)',
             border: 'none',
             borderRadius: '50%',
-            width: '36px',
-            height: '36px',
+            width: '32px',
+            height: '32px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -102,18 +102,18 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
             color: 'var(--text-main)'
           }}
         >
-          <X size={20} />
+          <X size={18} />
         </button>
 
         {!successData ? (
           <div>
-            <div style={{ marginBottom: '1.5rem' }}>
-              <div className="badge badge-royal" style={{ marginBottom: '0.4rem' }}>
-                🪷 Kamal Appointment Engine
+            <div style={{ marginBottom: '1.25rem' }}>
+              <div className="badge badge-royal" style={{ marginBottom: '0.35rem' }}>
+                🪷 Kalam Appointment Engine
               </div>
-              <h2 style={{ fontSize: '1.75rem' }}>Schedule Your Dental Visit</h2>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                Select your preferred doctor, date & time slot at Kamal Dental Clinic & Advanced Implant Center.
+              <h2 style={{ fontSize: '1.6rem' }}>Schedule Your Dental Visit</h2>
+              <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+                Select your preferred doctor, date & time slot at Kalam Dental Clinic & Advanced Implant Center.
               </p>
             </div>
 
@@ -148,7 +148,7 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
                 </select>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                 <div className="form-group">
                   <label>Preferred Date</label>
                   <input
@@ -187,7 +187,7 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
                 />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                 <div className="form-group">
                   <label>Phone Number (WhatsApp)</label>
                   <input
@@ -224,51 +224,51 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
                 />
               </div>
 
-              <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
-                <button type="button" onClick={onClose} className="btn btn-secondary">
+              <div style={{ marginTop: '1.25rem', display: 'flex', gap: '0.75rem', justifyContent: 'flex-end' }}>
+                <button type="button" onClick={onClose} className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
                   Cancel
                 </button>
-                <button type="submit" disabled={loading} className="btn btn-primary" style={{ padding: '0.8rem 2rem' }}>
-                  {loading ? "Confirming..." : "Confirm Kamal Booking"}
+                <button type="submit" disabled={loading} className="btn btn-primary" style={{ padding: '0.5rem 1.5rem', fontSize: '0.85rem' }}>
+                  {loading ? "Confirming..." : "Confirm Kalam Booking"}
                 </button>
               </div>
 
             </form>
           </div>
         ) : (
-          <div style={{ textAlign: 'center', padding: '1rem 0' }}>
+          <div style={{ textAlign: 'center', padding: '0.5rem 0' }}>
             <div style={{
-              width: '64px',
-              height: '64px',
+              width: '56px',
+              height: '56px',
               borderRadius: '50%',
-              background: 'rgba(0, 82, 204, 0.15)',
+              background: 'rgba(0, 82, 204, 0.12)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               color: 'var(--primary-royal)',
-              margin: '0 auto 1.25rem auto'
+              margin: '0 auto 1rem auto'
             }}>
-              <CheckCircle size={36} />
+              <CheckCircle size={32} />
             </div>
 
-            <h2 style={{ fontSize: '1.85rem', marginBottom: '0.5rem' }}>Appointment Registered!</h2>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-              Your appointment has been registered with Kamal Dental Clinic.
+            <h2 style={{ fontSize: '1.6rem', marginBottom: '0.35rem' }}>Appointment Registered!</h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.875rem', marginBottom: '1.25rem' }}>
+              Your appointment has been registered with Kalam Dental Clinic.
             </p>
 
             <div style={{
-              padding: '1.25rem',
-              borderRadius: 'var(--radius-md)',
+              padding: '1rem',
+              borderRadius: 'var(--radius-sm)',
               background: 'var(--bg-card-hover)',
               border: '1px dashed var(--primary-royal)',
-              marginBottom: '1.5rem',
+              marginBottom: '1.25rem',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between'
             }}>
               <div style={{ textAlign: 'left' }}>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>BOOKING PASS REF</div>
-                <div style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--primary-royal)', letterSpacing: '1px' }}>
+                <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 600 }}>BOOKING PASS REF</div>
+                <div style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--primary-royal)', letterSpacing: '1px' }}>
                   {successData.booking_ref}
                 </div>
               </div>
@@ -276,24 +276,24 @@ export default function BookingModal({ isOpen, onClose, initialService, initialD
               <button
                 onClick={copyBookingRef}
                 className="btn btn-secondary"
-                style={{ padding: '0.5rem 0.85rem', fontSize: '0.85rem' }}
+                style={{ padding: '0.4rem 0.75rem', fontSize: '0.8rem' }}
               >
-                <Copy size={14} /> Copy Code
+                <Copy size={13} /> Copy Code
               </button>
             </div>
 
-            <div style={{ textAlign: 'left', background: 'var(--bg-card)', padding: '1rem', borderRadius: 'var(--radius-sm)', fontSize: '0.9rem', marginBottom: '2rem' }}>
-              <div style={{ marginBottom: '0.4rem' }}><strong>Patient:</strong> {successData.patient_name}</div>
-              <div style={{ marginBottom: '0.4rem' }}><strong>Senior Specialist:</strong> {successData.doctor_name}</div>
-              <div style={{ marginBottom: '0.4rem' }}><strong>Procedure:</strong> {successData.service_name}</div>
-              <div style={{ marginBottom: '0.4rem' }}><strong>Date & Slot:</strong> {successData.date} at {successData.time_slot}</div>
+            <div style={{ textAlign: 'left', background: 'var(--bg-card)', padding: '0.85rem', borderRadius: 'var(--radius-sm)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+              <div style={{ marginBottom: '0.3rem' }}><strong>Patient:</strong> {successData.patient_name}</div>
+              <div style={{ marginBottom: '0.3rem' }}><strong>Senior Specialist:</strong> {successData.doctor_name}</div>
+              <div style={{ marginBottom: '0.3rem' }}><strong>Procedure:</strong> {successData.service_name}</div>
+              <div style={{ marginBottom: '0.3rem' }}><strong>Date & Slot:</strong> {successData.date} at {successData.time_slot}</div>
               <div><strong>Clinic Center:</strong> {successData.branch}</div>
             </div>
 
             <button
               onClick={() => { setSuccessData(null); onClose(); }}
               className="btn btn-primary"
-              style={{ width: '100%' }}
+              style={{ width: '100%', padding: '0.55rem' }}
             >
               Done & Close
             </button>

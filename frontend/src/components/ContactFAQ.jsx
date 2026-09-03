@@ -6,19 +6,19 @@ export default function ContactFAQ() {
 
   const faqs = [
     {
-      q: "What makes Kamal Laser Dental Implants superior?",
-      a: "Kamal Signature Laser Implants utilize computer-guided 3D navigation and painless laser contouring, eliminating surgical incisions and sutures for rapid healing."
+      q: "What makes Kalam Laser Dental Implants superior?",
+      a: "Kalam Signature Laser Implants utilize computer-guided 3D navigation and painless laser contouring, eliminating surgical incisions and sutures for rapid healing."
     },
     {
       q: "Is the 30-Minute Microscopic Root Canal truly painless?",
       a: "Yes. Our Endodontist Dr. Meera utilizes targeted anesthesia and micro-magnification to complete precision rotary root canals pain-free in 30 minutes."
     },
     {
-      q: "How do Kamal Clear 3D Aligners work?",
-      a: "Kamal Clear Aligners start with a 3D intraoral scan. We provide custom transparent aligners and a 3D video simulation of your future smile."
+      q: "How do Kalam Clear 3D Aligners work?",
+      a: "Kalam Clear Aligners start with a 3D intraoral scan. We provide custom transparent aligners and a 3D video simulation of your future smile."
     },
     {
-      q: "Does Kamal Dental provide 0% interest No-Cost EMI options?",
+      q: "Does Kalam Dental provide 0% interest No-Cost EMI options?",
       a: "Yes! We offer 0% interest monthly EMI payment options for Laser Implants, Clear Aligners, and Smile Makeovers, plus itemized insurance invoices."
     },
     {
@@ -35,7 +35,7 @@ export default function ContactFAQ() {
           <div className="badge badge-royal" style={{ marginBottom: '0.5rem' }}>
             Location & Contact Hub
           </div>
-          <h2>Visit Kamal Dental Center</h2>
+          <h2>Visit Kalam Dental Center</h2>
           <p>
             Conveniently located with dedicated patient parking and state-of-the-art dental laser suites.
           </p>
@@ -49,7 +49,7 @@ export default function ContactFAQ() {
         }}>
           
           <div className="glass-card" style={{ padding: '1.5rem', borderRadius: 'var(--radius-md)' }}>
-            <h3 style={{ fontSize: '1.25rem', marginBottom: '1.15rem' }}>Contact Information</h3>
+            <h3 style={{ fontSize: '1.25rem', marginBottom: '1.15rem' }}>Kalam Dental Contact Info</h3>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               
@@ -64,7 +64,7 @@ export default function ContactFAQ() {
                 <div>
                   <div style={{ fontWeight: 700, fontSize: '0.875rem' }}>Main Clinic Address</div>
                   <div style={{ fontSize: '0.825rem', color: 'var(--text-muted)', lineHeight: 1.4, marginTop: '0.15rem' }}>
-                    Plot No. 12, Main Healthcare Boulevard, City Center
+                    Kalam Dental Clinic & Advanced Implant Center, Plot No. 12, Main Healthcare Boulevard, City Center
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function ContactFAQ() {
             position: 'relative'
           }}>
             <iframe
-              title="Kamal Dental Location Map"
+              title="Kalam Dental Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.497491823902!2d78.486671!3d17.385044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978680000001%3A0x123456789abcdef!2sHyderabad!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -152,7 +152,7 @@ export default function ContactFAQ() {
 
         <div style={{ maxWidth: '740px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
-            <h3 style={{ fontSize: '1.5rem' }}>Frequently Asked Questions</h3>
+            <h3 style={{ fontSize: '1.5rem' }}>Kalam Dental FAQ</h3>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

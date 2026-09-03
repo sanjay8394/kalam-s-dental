@@ -34,12 +34,12 @@ export default function Footer({ onOpenBooking }) {
                 🪷
               </div>
               <div style={{ fontFamily: 'var(--font-heading)', fontSize: '1.15rem', fontWeight: 800 }}>
-                KAMAL <span style={{ color: 'var(--primary-royal)' }}>DENTAL</span>
+                KALAM <span style={{ color: 'var(--primary-royal)' }}>DENTAL</span>
               </div>
             </div>
 
             <p style={{ fontSize: '0.825rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1rem' }}>
-              Kamal Dental Clinic & Advanced Implant Center delivers painless computer-guided laser implants, 3D clear aligners, and microscopic root canal procedures.
+              Kalam Dental Clinic & Advanced Implant Center delivers painless computer-guided laser implants, 3D clear aligners, and microscopic root canal procedures.
             </p>
 
             <button onClick={() => onOpenBooking()} className="btn btn-primary" style={{ padding: '0.45rem 1rem', fontSize: '0.8rem' }}>
@@ -50,9 +50,9 @@ export default function Footer({ onOpenBooking }) {
           <div>
             <h4 style={{ fontSize: '0.95rem', marginBottom: '0.85rem' }}>Specializations</h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.45rem', fontSize: '0.825rem' }}>
-              <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Kamal Signature Laser Implants</a></li>
+              <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Kalam Signature Laser Implants</a></li>
               <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>30-Min Microscopic Painless RCT</a></li>
-              <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Kamal Clear 3D Aligners</a></li>
+              <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Kalam Clear 3D Aligners</a></li>
               <li><a href="#services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>3D Digital Hollywood Smile Makeover</a></li>
             </ul>
           </div>
@@ -92,7 +92,7 @@ export default function Footer({ onOpenBooking }) {
           color: 'var(--text-muted)'
         }}>
           <div>
-            © {new Date().getFullYear()} Kamal Dental Clinic & Advanced Implant Center.
+            © {new Date().getFullYear()} Kalam Dental Clinic & Advanced Implant Center.
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
             Designed with <Heart size={13} color="#0052CC" fill="#0052CC" /> for Patient Care

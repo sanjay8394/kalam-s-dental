@@ -1,14 +1,14 @@
-# 🪷 Kamal Dental Clinic & Advanced Implant Center
+# 🪷 Kalam Dental Clinic & Advanced Implant Center
 
-Full-stack, production-ready dental web application for **Kamal Dental**. Built with **React.js**, **FastAPI (Python)**, **PostgreSQL**, **HTML/CSS/JS**, and **Docker**.
+Full-stack, production-ready dental web application for **Kalam Dental**. Built with **React.js**, **FastAPI (Python)**, **PostgreSQL**, **HTML/CSS/JS**, and **Docker**.
 
 ---
 
 ## 🌟 Key Features
 
-1. **Brand Identity**: Custom Sapphire Royal Blue (`#0A2540`), Deep Cyan (`#0052CC`), Electric Cyan (`#00B4D8`), and Lotus Gold (`#D4AF37`) visual design system.
-2. **Patient Appointment Engine**: Real-time appointment booking with instant unique reference pass generation (`KAMAL-XXXXX`).
-3. **Kamal 360° AI Symptom Assistant**: Interactive diagnostic tool giving personalized procedure recommendations, estimated duration, and price guidance.
+1. **Brand Identity**: Executive Sapphire Royal Blue (`#07192F` / `#0052CC`), Electric Cyan (`#00B4D8`), and Lotus Gold (`#C5A059`) visual design system.
+2. **Patient Appointment Engine**: Real-time appointment booking with instant unique reference pass generation (`KALAM-XXXXX`).
+3. **Kalam 360° AI Symptom Assistant**: Interactive diagnostic tool giving personalized procedure recommendations, estimated duration, and price guidance.
 4. **Specialist Surgeons Roster**: Senior Implantologists, Endodontists, and Orthodontists.
 5. **Patient Portal**: Search and track appointment status by phone number or booking reference code.
 6. **Staff Admin Operations Panel**: Real-time dashboard analytics, status filtering (Pending, Confirmed, Completed, Cancelled), and clinical notes editor.

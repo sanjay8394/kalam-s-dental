@@ -3,12 +3,12 @@ version: '3.8'
 services:
   db:
     image: postgres:15-alpine
-    container_name: kamal_postgres_db
+    container_name: kalam_postgres_db
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgrespassword
-      POSTGRES_DB: kamal_dental_db
+      POSTGRES_DB: kalam_dental_db
     ports:
       - "5432:5432"
     volumes:
@@ -18,10 +18,10 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: kamal_dental_backend
+    container_name: kalam_dental_backend
     restart: always
     environment:
-      - DATABASE_URL=postgresql://postgres:postgrespassword@db:5432/kamal_dental_db
+      - DATABASE_URL=postgresql://postgres:postgrespassword@db:5432/kalam_dental_db
     ports:
       - "8000:8000"
     depends_on:
@@ -31,7 +31,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: kamal_dental_frontend
+    container_name: kalam_dental_frontend
     restart: always
     ports:
       - "3000:80"

@@ -30,10 +30,10 @@ export default function SmileQuiz({ onOpenBooking }) {
     } catch (err) {
       console.error("Assessment error", err);
       setResult({
-        recommended_services: ["Kamal Signature Laser Implant & Zirconia Crown"],
+        recommended_services: ["Kalam Signature Laser Implant & Zirconia Crown"],
         estimated_duration: "Single sitting laser placement",
         price_estimate: "Starting from ₹18,999",
-        expert_tip: "Laser implant placement at Kamal Dental achieves a 99.4% stability rate with zero surgical sutures."
+        expert_tip: "Laser implant placement at Kalam Dental achieves a 99.4% stability rate with zero surgical sutures."
       });
     } finally {
       setLoading(false);
@@ -51,7 +51,7 @@ export default function SmileQuiz({ onOpenBooking }) {
         
         <div className="section-header">
           <div className="badge badge-gold" style={{ marginBottom: '0.5rem' }}>
-            Kamal 360° AI Symptom Assistant
+            Kalam 360° AI Symptom Assistant
           </div>
           <h2>Instant Virtual Clinical Assessment</h2>
           <p>
@@ -159,7 +159,7 @@ export default function SmileQuiz({ onOpenBooking }) {
                 }}>
                   <CheckCircle size={20} />
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '0.975rem' }}>Kamal Clinical Assessment Ready</div>
+                    <div style={{ fontWeight: 800, fontSize: '0.975rem' }}>Kalam Clinical Assessment Ready</div>
                     <div style={{ fontSize: '0.785rem' }}>Custom evaluation for {concern}</div>
                   </div>
                 </div>

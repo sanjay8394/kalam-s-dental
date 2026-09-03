@@ -56,34 +56,34 @@ export default function AdminDashboard({ isOpen, onClose }) {
       position: 'fixed',
       inset: 0,
       zIndex: 200,
-      background: 'rgba(10, 37, 64, 0.85)',
+      background: 'rgba(7, 25, 47, 0.85)',
       backdropFilter: 'blur(10px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1.5rem'
+      padding: '1rem'
     }}>
       <div className="glass-card" style={{
         width: '100%',
-        maxWidth: '1080px',
-        maxHeight: '92vh',
+        maxWidth: '1020px',
+        maxHeight: '90vh',
         overflowY: 'auto',
         background: 'var(--bg-card)',
         borderRadius: 'var(--radius-lg)',
-        padding: '2rem',
+        padding: '1.75rem',
         position: 'relative'
       }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
           <div>
-            <div className="badge badge-gold" style={{ marginBottom: '0.4rem' }}>
-              <ShieldAlert size={14} /> Kamal Staff & Operations Panel
+            <div className="badge badge-gold" style={{ marginBottom: '0.35rem' }}>
+              <ShieldAlert size={13} /> Kalam Staff Operations Panel
             </div>
-            <h2 style={{ fontSize: '1.85rem' }}>Kamal Dental Admin Dashboard</h2>
+            <h2 style={{ fontSize: '1.6rem' }}>Kalam Dental Admin Dashboard</h2>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <button onClick={loadData} className="btn btn-secondary" style={{ padding: '0.55rem 0.95rem', fontSize: '0.85rem' }}>
-              <RefreshCw size={15} /> Refresh
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+            <button onClick={loadData} className="btn btn-secondary" style={{ padding: '0.45rem 0.85rem', fontSize: '0.8rem' }}>
+              <RefreshCw size={13} /> Refresh
             </button>
 
             <button
@@ -92,8 +92,8 @@ export default function AdminDashboard({ isOpen, onClose }) {
                 background: 'var(--bg-card-hover)',
                 border: 'none',
                 borderRadius: '50%',
-                width: '38px',
-                height: '38px',
+                width: '34px',
+                height: '34px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -101,7 +101,7 @@ export default function AdminDashboard({ isOpen, onClose }) {
                 color: 'var(--text-main)'
               }}
             >
-              <X size={20} />
+              <X size={18} />
             </button>
           </div>
         </div>
@@ -109,47 +109,47 @@ export default function AdminDashboard({ isOpen, onClose }) {
         {stats && (
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            gap: '1rem',
-            marginBottom: '2rem'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+            gap: '0.85rem',
+            marginBottom: '1.5rem'
           }}>
-            <div style={{ padding: '1.15rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>Total Appointments</div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 800, color: 'var(--primary-royal)' }}>{stats.total_appointments}</div>
+            <div style={{ padding: '0.85rem', borderRadius: 'var(--radius-sm)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Total Appointments</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--primary-royal)' }}>{stats.total_appointments}</div>
             </div>
 
-            <div style={{ padding: '1.15rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>Confirmed</div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#0052CC' }}>{stats.confirmed}</div>
+            <div style={{ padding: '0.85rem', borderRadius: 'var(--radius-sm)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Confirmed</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0052CC' }}>{stats.confirmed}</div>
             </div>
 
-            <div style={{ padding: '1.15rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>Pending Review</div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#B89628' }}>{stats.pending}</div>
+            <div style={{ padding: '0.85rem', borderRadius: 'var(--radius-sm)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Pending Review</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-gold-dark)' }}>{stats.pending}</div>
             </div>
 
-            <div style={{ padding: '1.15rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>Completed</div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#00B4D8' }}>{stats.completed}</div>
+            <div style={{ padding: '0.85rem', borderRadius: 'var(--radius-sm)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Completed</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#00B4D8' }}>{stats.completed}</div>
             </div>
 
-            <div style={{ padding: '1.15rem', borderRadius: 'var(--radius-md)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
-              <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 600 }}>Today's Consultations</div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 800, color: '#D4AF37' }}>{stats.today_appointments}</div>
+            <div style={{ padding: '0.85rem', borderRadius: 'var(--radius-sm)', background: 'var(--bg-card-hover)', border: '1px solid var(--border-light)' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Today's Consultations</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--accent-gold-dark)' }}>{stats.today_appointments}</div>
             </div>
           </div>
         )}
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-          <h3 style={{ fontSize: '1.2rem' }}>Appointment Master Directory</h3>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+          <h3 style={{ fontSize: '1.1rem' }}>Appointment Master Directory</h3>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Filter size={16} color="var(--text-muted)" />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <Filter size={14} color="var(--text-muted)" />
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
               className="form-select"
-              style={{ width: 'auto', padding: '0.45rem 1rem' }}
+              style={{ width: 'auto', padding: '0.35rem 0.75rem', fontSize: '0.825rem' }}
             >
               <option value="all">All Statuses</option>
               <option value="Confirmed">Confirmed</option>
@@ -161,45 +161,45 @@ export default function AdminDashboard({ isOpen, onClose }) {
         </div>
 
         <div style={{ overflowX: 'auto' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem', textAlign: 'left' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem', textAlign: 'left' }}>
             <thead>
               <tr style={{ borderBottom: '2px solid var(--border-light)', background: 'var(--bg-card-hover)' }}>
-                <th style={{ padding: '0.85rem' }}>Ref Code</th>
-                <th style={{ padding: '0.85rem' }}>Patient Name</th>
-                <th style={{ padding: '0.85rem' }}>Phone / Email</th>
-                <th style={{ padding: '0.85rem' }}>Date & Time</th>
-                <th style={{ padding: '0.85rem' }}>Senior Specialist</th>
-                <th style={{ padding: '0.85rem' }}>Status</th>
-                <th style={{ padding: '0.85rem', textAlign: 'center' }}>Action</th>
+                <th style={{ padding: '0.65rem' }}>Ref Code</th>
+                <th style={{ padding: '0.65rem' }}>Patient Name</th>
+                <th style={{ padding: '0.65rem' }}>Phone / Email</th>
+                <th style={{ padding: '0.65rem' }}>Date & Time</th>
+                <th style={{ padding: '0.65rem' }}>Senior Specialist</th>
+                <th style={{ padding: '0.65rem' }}>Status</th>
+                <th style={{ padding: '0.65rem', textAlign: 'center' }}>Action</th>
               </tr>
             </thead>
             <tbody>
               {appointments.map((a) => (
                 <tr key={a.id} style={{ borderBottom: '1px solid var(--border-light)' }}>
-                  <td style={{ padding: '0.85rem', fontWeight: 800, color: 'var(--primary-royal)' }}>
+                  <td style={{ padding: '0.65rem', fontWeight: 800, color: 'var(--primary-royal)' }}>
                     {a.booking_ref}
                   </td>
-                  <td style={{ padding: '0.85rem', fontWeight: 600 }}>
+                  <td style={{ padding: '0.65rem', fontWeight: 600 }}>
                     {a.patient_name}
                   </td>
-                  <td style={{ padding: '0.85rem', fontSize: '0.85rem' }}>
+                  <td style={{ padding: '0.65rem', fontSize: '0.8rem' }}>
                     <div>{a.phone}</div>
                     <div style={{ color: 'var(--text-muted)' }}>{a.email}</div>
                   </td>
-                  <td style={{ padding: '0.85rem', fontSize: '0.85rem' }}>
+                  <td style={{ padding: '0.65rem', fontSize: '0.8rem' }}>
                     <div>{a.date}</div>
                     <div style={{ color: 'var(--primary-royal)', fontWeight: 600 }}>{a.time_slot}</div>
                   </td>
-                  <td style={{ padding: '0.85rem', fontSize: '0.85rem' }}>
+                  <td style={{ padding: '0.65rem', fontSize: '0.8rem' }}>
                     <div style={{ fontWeight: 600 }}>{a.doctor_name}</div>
                     <div style={{ color: 'var(--text-muted)' }}>{a.service_name}</div>
                   </td>
-                  <td style={{ padding: '0.85rem' }}>
+                  <td style={{ padding: '0.65rem' }}>
                     <span className="badge badge-royal">
                       {a.status}
                     </span>
                   </td>
-                  <td style={{ padding: '0.85rem', textAlign: 'center' }}>
+                  <td style={{ padding: '0.65rem', textAlign: 'center' }}>
                     <button
                       onClick={() => {
                         setEditingAppt(a);
@@ -207,9 +207,9 @@ export default function AdminDashboard({ isOpen, onClose }) {
                         setNewNotes(a.notes || '');
                       }}
                       className="btn btn-secondary"
-                      style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem' }}
+                      style={{ padding: '0.25rem 0.6rem', fontSize: '0.75rem' }}
                     >
-                      <Edit3 size={13} /> Edit
+                      <Edit3 size={12} /> Edit
                     </button>
                   </td>
                 </tr>
@@ -229,8 +229,8 @@ export default function AdminDashboard({ isOpen, onClose }) {
             justifyContent: 'center',
             padding: '1rem'
           }}>
-            <div className="glass-card" style={{ padding: '2rem', maxWidth: '480px', width: '100%', background: 'var(--bg-card)' }}>
-              <h3 style={{ marginBottom: '1rem' }}>Manage Appointment #{editingAppt.booking_ref}</h3>
+            <div className="glass-card" style={{ padding: '1.5rem', maxWidth: '440px', width: '100%', background: 'var(--bg-card)' }}>
+              <h3 style={{ marginBottom: '0.85rem', fontSize: '1.2rem' }}>Manage Appointment #{editingAppt.booking_ref}</h3>
 
               <form onSubmit={handleUpdateStatus}>
                 <div className="form-group">
@@ -257,11 +257,11 @@ export default function AdminDashboard({ isOpen, onClose }) {
                   />
                 </div>
 
-                <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '1.5rem' }}>
-                  <button type="button" onClick={() => setEditingAppt(null)} className="btn btn-secondary">
+                <div style={{ display: 'flex', gap: '0.6rem', justifyContent: 'flex-end', marginTop: '1.25rem' }}>
+                  <button type="button" onClick={() => setEditingAppt(null)} className="btn btn-secondary" style={{ padding: '0.45rem 0.85rem', fontSize: '0.8rem' }}>
                     Cancel
                   </button>
-                  <button type="submit" disabled={updating} className="btn btn-primary">
+                  <button type="submit" disabled={updating} className="btn btn-primary" style={{ padding: '0.45rem 1.15rem', fontSize: '0.8rem' }}>
                     {updating ? "Saving..." : "Save Record"}
                   </button>
                 </div>

@@ -20,7 +20,7 @@ export async function fetchServices() {
       {
         id: 1,
         category: "Laser Dental Implants",
-        title: "Kamal Signature Laser Implant & Zirconia Crown",
+        title: "Kalam Signature Laser Implant & Zirconia Crown",
         description: "Pain-free, computer-guided titanium dental implant placement with zero-suture laser recovery.",
         duration_mins: 45,
         price_starting: 18999,
@@ -40,7 +40,7 @@ export async function fetchServices() {
       {
         id: 3,
         category: "Invisible Aligners",
-        title: "Kamal Clear 3D Aligners",
+        title: "Kalam Clear 3D Aligners",
         description: "Custom 3D scanned clear aligner trays for comfortable, 100% invisible tooth straightening.",
         duration_mins: 40,
         price_starting: 27999,
@@ -71,7 +71,7 @@ export async function fetchDoctors() {
     return [
       {
         id: 1,
-        name: "Dr. Kamal Kishore MDS",
+        name: "Dr. Kalam Kishore MDS",
         title: "Founder & Senior Implantologist",
         specialization: "Laser Implant Surgery & Full Mouth Rehab",
         qualification: "MDS, FICOI (USA)",
@@ -109,7 +109,7 @@ export async function createAppointment(payload) {
   } catch (err) {
     return {
       id: Math.floor(Math.random() * 1000),
-      booking_ref: `KAMAL-${Math.floor(10000 + Math.random() * 90000)}`,
+      booking_ref: `KALAM-${Math.floor(10000 + Math.random() * 90000)}`,
       ...payload,
       status: "Confirmed",
       created_at: new Date().toISOString()
@@ -121,7 +121,7 @@ export async function trackAppointments(identifier) {
   const res = await fetch(`${API_BASE_URL}/appointments/track/${encodeURIComponent(identifier)}`);
   if (!res.ok) {
     const data = await res.json().catch(() => ({}));
-    throw new Error(data.detail || "Appointment record not found at Kamal Dental.");
+    throw new Error(data.detail || "Appointment record not found at Kalam Dental.");
   }
   return await res.json();
 }
