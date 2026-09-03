@@ -49,6 +49,9 @@ def root():
         }
     }
 
+import os
+from fastapi.staticfiles import StaticFiles
+
 @app.get("/api/health")
 def health_check():
     return {
@@ -56,6 +59,15 @@ def health_check():
         "clinic": "Kalam Dental Clinic & Advanced Implant Center",
         "timestamp": datetime.utcnow().isoformat()
     }
+
+# Check and mount static frontend if built in production container
+static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend/dist"))
+if not os.path.exists(static_dir):
+    static_dir = os.path.abspath("frontend/dist")
+
+if os.path.exists(static_dir):
+    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
+
 
 # ================= SERVICES ENDPOINTS =================
 
