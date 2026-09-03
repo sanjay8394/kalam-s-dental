@@ -1,19 +1,9 @@
-databases:
-  - name: kalam-db
-    databaseName: kalam_dental_db
-    plan: free
-
 services:
   - type: web
     name: kalam-dental-api
     env: python
     buildCommand: "pip install -r backend/requirements.txt"
     startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
-    envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: kalam-db
-          property: connectionString
 
   - type: web
     name: kalam-dental-frontend
