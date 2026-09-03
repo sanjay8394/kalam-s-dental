@@ -1,8 +1,10 @@
-services:
-  - type: postgres
-    name: kalam-db
-    ipAllowList: []
+databases:
+  - name: kalam-db
+    databaseName: kalam_dental_db
+    user: postgres
+    plan: free
 
+services:
   - type: web
     name: kalam-dental-api
     env: python
