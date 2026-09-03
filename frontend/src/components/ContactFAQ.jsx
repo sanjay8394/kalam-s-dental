@@ -37,7 +37,7 @@ export default function ContactFAQ() {
           </div>
           <h2>Visit Kalam Dental Center</h2>
           <p>
-            Conveniently located with dedicated patient parking and state-of-the-art dental laser suites.
+            Conveniently located at 15.255157, 80.023457 with dedicated patient parking and dental laser suites.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function ContactFAQ() {
         }}>
           
           <div className="glass-card" style={{ padding: '1.5rem', borderRadius: 'var(--radius-md)' }}>
-            <h3 style={{ fontSize: '1.25rem', marginBottom: '1.15rem' }}>Kalam Dental Contact Info</h3>
+            <h3 style={{ fontSize: '1.25rem', marginBottom: '1.15rem' }}>Kalam Dental Location</h3>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               
@@ -62,9 +62,10 @@ export default function ContactFAQ() {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <div style={{ fontWeight: 700, fontSize: '0.875rem' }}>Main Clinic Address</div>
+                  <div style={{ fontWeight: 700, fontSize: '0.875rem' }}>GPS Coordinates</div>
                   <div style={{ fontSize: '0.825rem', color: 'var(--text-muted)', lineHeight: 1.4, marginTop: '0.15rem' }}>
-                    Kalam Dental Clinic & Advanced Implant Center, Plot No. 12, Main Healthcare Boulevard, City Center
+                    <strong>15°15'18.6"N 80°01'24.4"E</strong> <br />
+                    (Decimal: 15.255157, 80.023457)
                   </div>
                 </div>
               </div>
@@ -121,13 +122,13 @@ export default function ContactFAQ() {
             </div>
 
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps/dir/?api=1&destination=15.255157,80.023457"
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
               style={{ width: '100%', marginTop: '1.35rem', padding: '0.5rem', fontSize: '0.85rem' }}
             >
-              <Navigation size={14} /> Open Google Maps Location
+              <Navigation size={14} /> Open Location (15.255157, 80.023457)
             </a>
           </div>
 
@@ -138,8 +139,8 @@ export default function ContactFAQ() {
             position: 'relative'
           }}>
             <iframe
-              title="Kalam Dental Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.497491823902!2d78.486671!3d17.385044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978680000001%3A0x123456789abcdef!2sHyderabad!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              title="Kalam Dental GPS Map Location"
+              src="https://maps.google.com/maps?q=15.255157,80.023457&hl=en&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '300px' }}
